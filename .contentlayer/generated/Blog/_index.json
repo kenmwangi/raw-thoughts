@@ -1,10 +1,34 @@
 [
   {
+    "title": "Death Brings Life?",
+    "date": "2023-02-01T00:00:00.000Z",
+    "body": {
+      "raw": "\nThe primary protagonist of the historic movie \"Medieval\" Jan Zizka starred in English actor Ben Forster kept saying the three words \"Death Brings Life\" once his soldier or relative dies.\n\nHe would then take some seeds from a small pocket and plant them in the soil under the dead person's corpse.\nAs I watched the movie I kept thinking about what the real meaning of death brings to life.\nTaking it literary, Jan was planting seeds under the corpse because as the body decomposes, nature will take its course where the grains will germinate and new life will come out under that body.\nIt will not be a total loss - as the death will facilitate new life with assumptions that I am not comparing human life with that of plants.\nMy thoughts are unbiased until this point but I don't know for how long I can hold on thinking on this particular perspective. Let's get biased.\nDeviating from philosophical analysis, when one orders a burger or a nyama choma (roasted goat meat) meal, they are using dead cows or goat meat to get vital nutrients we need as humans for survival.\nThe animal's death did not happen in vain. It has facilitated human life by offering a meal out of its body.\nWhat a sacrifice?! From this small analogy, death and life cannot be termed - always - as ying and yang, best and worst, or good and bad.\nNo, death and life are parallel. Each facilitates the other.\nOne has to happen for another to occur.\nThere can never be death where there was no life and in this way, there is no life without death.\nThe hardest part of agreeing with the parallelism of death and life is the ultimate sacrifice one has to make.\nWho likes making sacrifices? I don't! Circumstances force us to make one.\nIt is human nature to find the easiest way to accomplish something.\nOur brain is wired to find a shortcut in everything we do.\nI would have loved a modern AI platform such as talk of the town right not ChatGPT to write this essay for me.\nHowever, I knew it would not say what is in my mind no matter the precise input I will give to it.\nI have made a sacrifice of staying in front of my laptop, type my raw thoughts as I am forced by a circumstance that no one will do it for me, the way I want it to be done.\nThe parallelism of my sacrifice in writing this essay will be the death of time I think I could have done something useful other writing to bring out my raw thoughts (debatable).\nDeath brings life. Our struggles to become productive, focused, or even useful needs the demise of bad habits in our lives. Kill the bad habits and give life to beneficial habits.\n",
+      "html": "<p>The primary protagonist of the historic movie \"Medieval\" Jan Zizka starred in English actor Ben Forster kept saying the three words \"Death Brings Life\" once his soldier or relative dies.</p>\n<p>He would then take some seeds from a small pocket and plant them in the soil under the dead person's corpse.\nAs I watched the movie I kept thinking about what the real meaning of death brings to life.\nTaking it literary, Jan was planting seeds under the corpse because as the body decomposes, nature will take its course where the grains will germinate and new life will come out under that body.\nIt will not be a total loss - as the death will facilitate new life with assumptions that I am not comparing human life with that of plants.\nMy thoughts are unbiased until this point but I don't know for how long I can hold on thinking on this particular perspective. Let's get biased.\nDeviating from philosophical analysis, when one orders a burger or a nyama choma (roasted goat meat) meal, they are using dead cows or goat meat to get vital nutrients we need as humans for survival.\nThe animal's death did not happen in vain. It has facilitated human life by offering a meal out of its body.\nWhat a sacrifice?! From this small analogy, death and life cannot be termed - always - as ying and yang, best and worst, or good and bad.\nNo, death and life are parallel. Each facilitates the other.\nOne has to happen for another to occur.\nThere can never be death where there was no life and in this way, there is no life without death.\nThe hardest part of agreeing with the parallelism of death and life is the ultimate sacrifice one has to make.\nWho likes making sacrifices? I don't! Circumstances force us to make one.\nIt is human nature to find the easiest way to accomplish something.\nOur brain is wired to find a shortcut in everything we do.\nI would have loved a modern AI platform such as talk of the town right not ChatGPT to write this essay for me.\nHowever, I knew it would not say what is in my mind no matter the precise input I will give to it.\nI have made a sacrifice of staying in front of my laptop, type my raw thoughts as I am forced by a circumstance that no one will do it for me, the way I want it to be done.\nThe parallelism of my sacrifice in writing this essay will be the death of time I think I could have done something useful other writing to bring out my raw thoughts (debatable).\nDeath brings life. Our struggles to become productive, focused, or even useful needs the demise of bad habits in our lives. Kill the bad habits and give life to beneficial habits.</p>"
+    },
+    "_id": "death-brings-life.mdx",
+    "_raw": {
+      "sourceFilePath": "death-brings-life.mdx",
+      "sourceFileName": "death-brings-life.mdx",
+      "sourceFileDir": ".",
+      "contentType": "mdx",
+      "flattenedPath": "death-brings-life"
+    },
+    "type": "Blog",
+    "readingTime": {
+      "text": "3 min read",
+      "minutes": 2.405,
+      "time": 144300,
+      "words": 481
+    },
+    "slug": "/blog/death-brings-life"
+  },
+  {
     "title": "What is Contentlayer?",
     "date": "2023-02-03T00:00:00.000Z",
     "body": {
-      "raw": "\n**Contentlayer makes working with content easy.** It is a content preprocessor that validates and transforms your content into type-safe JSON you can easily import into your application.\n",
-      "html": "<p><strong>Contentlayer makes working with content easy.</strong> It is a content preprocessor that validates and transforms your content into type-safe JSON you can easily import into your application.</p>"
+      "raw": "\n**Contentlayer makes working with content easy.**\nIt is a content preprocessor that validates and transforms your content into type-safe JSON you can easily import into your application.\n",
+      "html": "<p><strong>Contentlayer makes working with content easy.</strong>\nIt is a content preprocessor that validates and transforms your content into type-safe JSON you can easily import into your application.</p>"
     },
     "_id": "what-is-contentlayer.mdx",
     "_raw": {

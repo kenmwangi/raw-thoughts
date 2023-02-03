@@ -13,7 +13,7 @@ export async function getStaticProps() {
 function BlogCard(blog: Blog) {
   return (
     <section className="mb-8">
-      <h2 className="text-xl">
+      <h2 className="text-2xl">
         <Link
           href={blog.slug}
           className="text-indigo-500 hover:text-indigo-700 transition-colors"
@@ -25,17 +25,17 @@ function BlogCard(blog: Blog) {
         {format(parseISO(blog.date), "LLLL d, yyyy")}
       </time>
 
-      <article
-        className="text-sm"
+      {/* <article
+        className="text-sm tracking-wide leading-normal"
         dangerouslySetInnerHTML={{ __html: blog.body.html }}
-      />
+      /> */}
     </section>
   );
 }
 
 const BlogPage = ({ blogs }: { blogs: Blog[] }) => {
   return (
-    <section className="max-w-xl mx-auto py-8">
+    <section className="max-w-6xl mx-auto py-8">
       <h1 className="text-3xl font-bold mb-8 text-center">Blog</h1>
       {blogs.map((blog, idx) => (
         <BlogCard key={idx} {...blog} />

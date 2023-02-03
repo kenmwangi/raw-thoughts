@@ -3,13 +3,16 @@ import Link from "next/link";
 const HomePage = () => {
   return (
     <section>
-      <Link
-        href="/blog"
-        className="text-indigo-500 hover:text-indigo-700 transition-colors"
-      >
-        Blog
-      </Link>
-      <h1>Home</h1>
+      <p>
+        These are my ocassional thought processes based on day to day
+        experiences. I will be writing on different topics from my software
+        development journey, social issues and philosophy.
+      </p>
+      <p>I intend to make this personal space an archive of my raw thoughts.</p>
+      <p>
+        But since it will be on internet - public - 🫣️ everyone is free to read
+        it.
+      </p>
     </section>
   );
 };

@@ -22,6 +22,7 @@
     "next-contentlayer": "^0.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-wrap-balancer": "^0.4.0",
     "reading-time": "^1.5.0",
     "rehype-accessible-emojis": "^0.3.2",
     "rehype-autolink-headings": "^6.1.1",
