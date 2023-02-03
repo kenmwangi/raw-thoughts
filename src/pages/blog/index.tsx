@@ -1,7 +1,6 @@
 import { allBlogs, Blog } from "contentlayer/generated";
 import { compareDesc, format, parseISO } from "date-fns";
 import Link from "next/link";
-import React from "react";
 
 export async function getStaticProps() {
   const blogs: Blog[] = allBlogs.sort((a, b) => {
@@ -25,6 +24,7 @@ function BlogCard(blog: Blog) {
       <time dateTime={blog.date} className="block text-xs text-gray-800 mb-2">
         {format(parseISO(blog.date), "LLLL d, yyyy")}
       </time>
+
       <article
         className="text-sm"
         dangerouslySetInnerHTML={{ __html: blog.body.html }}
