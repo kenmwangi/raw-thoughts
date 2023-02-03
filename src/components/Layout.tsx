@@ -6,9 +6,9 @@ interface LayoutProps {
 }
 const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="container max-w-6xl mx-auto px-4 md:px-0 lg:px-0">
+    <div className="container max-w-5xl mx-auto flex flex-col min-h-screen px-4  lg:px-0">
       <Header />
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
     </div>
   );
 };
