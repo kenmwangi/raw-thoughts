@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Inter } from "@next/font/google";
+import { Playfair_Display } from "@next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Playfair_Display({ subsets: ["latin"], weight: "400" });
 
 const navItems = [
   { id: "1", href: "/about", title: "About" },
@@ -25,7 +25,7 @@ const Header = () => {
               <Link
                 key={id}
                 href={href}
-                className="ml-4 text-xl lg:text-2xl hover:bg-black hover:text-white transition-colors font-semibold px-1 py-[1px]"
+                className="ml-6 underline-offset-8 underline text-xl lg:text-2xl hover:bg-black hover:text-white transition-colors font-semibold px-1 py-[1px]"
               >
                 {title}
               </Link>
