@@ -14,7 +14,7 @@ const Header = () => {
       <header className="pt-10 pb-8 flex justify-between items-center">
         <Link
           href="/"
-          className="border-black hover:bg-black hover:text-white hover:cursor-pointer shadow-[4px_5px_#000] border-4 py-2 px-8 font-bold text-xl transition-all rounded-sm"
+          className="border-black hover:bg-black hover:text-white hover:cursor-pointer shadow-[4px_5px_#000] border-2 lg:border-4 py-1 lg:py-2 px-4 lg:px-8 lg:font-bold font-semibold text-lg lg:text-xl transition-all rounded-sm"
         >
           Raw Thoughts
         </Link>
