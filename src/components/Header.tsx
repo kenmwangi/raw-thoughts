@@ -1,30 +1,39 @@
-import { Link } from "../utils/NextLink";
-import React from "react";
+import Link from "next/link";
+import { Inter } from "@next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
+
+const navItems = [
+  { id: "1", href: "/about", title: "About" },
+  { id: "2", href: "/thoughts", title: "Thoughts" },
+];
 
 const Header = () => {
   return (
-    <header className="py-8 flex justify-between items-center container max-w-6xl mx-auto">
-      <Link href="/" className="font-bold text-indigo-600">
-        Raw Thoughts
-      </Link>
-
-      <nav className="flex gap-3">
+    <div className={inter.className}>
+      <header className="pt-10 pb-8 flex justify-between items-center">
         <Link
           href="/"
-          className="text-blue-400 text-xs p-2 bg-blue-50 hover:bg-blue-100 rounded-md inline-flex items-center"
-          activeClassName="underline"
+          className="border-black hover:bg-black hover:text-white hover:cursor-pointer shadow-[4px_5px_#000] border-4 py-2 px-8 font-bold text-xl transition-all rounded-sm"
         >
-          Home
+          Raw Thoughts
         </Link>
-        <Link
-          href="/blog"
-          className="text-blue-400 text-xs p-2 bg-blue-50 hover:bg-blue-100 rounded-md inline-flex items-center"
-          activeClassName="underline"
-        >
-          Blog
-        </Link>
-      </nav>
-    </header>
+        <nav className="relative z-0 flex justify-around">
+          {navItems.map((navItem) => {
+            const { id, href, title } = navItem;
+            return (
+              <Link
+                key={id}
+                href={href}
+                className="ml-4 text-xl lg:text-2xl hover:bg-black hover:text-white transition-colors font-semibold px-1 py-[1px]"
+              >
+                {title}
+              </Link>
+            );
+          })}
+        </nav>
+      </header>
+    </div>
   );
 };
 

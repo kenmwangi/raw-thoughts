@@ -9,7 +9,19 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      theme: {
+        colors: {
+          primary: {
+            dark: "#000",
+            light: "#fff",
+          },
+          boxShadow: {
+            custom: "4px 5px rgb(0,0,0)",
+          },
+        },
+      },
+    },
   },
   plugins: [],
 };
