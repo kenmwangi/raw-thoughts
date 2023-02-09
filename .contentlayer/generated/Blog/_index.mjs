@@ -2,6 +2,5 @@
 
 import deathBringsLifeMdx from './death-brings-life.mdx.json' assert { type: 'json' }
 import laSangreEsSangreMdx from './la-sangre-es-sangre.mdx.json' assert { type: 'json' }
-import whatIsContentlayerMdx from './what-is-contentlayer.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [deathBringsLifeMdx, laSangreEsSangreMdx, whatIsContentlayerMdx]
+export const allBlogs = [deathBringsLifeMdx, laSangreEsSangreMdx]
