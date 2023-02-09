@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "../utils/NextLink";
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 
@@ -51,7 +51,7 @@ const Header = () => {
                     )}
                   </svg>
                 </Disclosure.Button>
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden shadow-sm ">
                   <React.Fragment>
                     {navItems.map((navItem) => {
                       const { id, href, title } = navItem;
