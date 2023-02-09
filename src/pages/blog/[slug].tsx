@@ -49,7 +49,7 @@ const SingleBlogPage = ({ blog }: BlogProps) => {
       </article>
       <div
         dangerouslySetInnerHTML={{ __html: blog.body.html }}
-        className="max-w-prose mx-auto lg:text-lg px-8 lg:px-0"
+        className="max-w-prose mx-auto lg:text-lg px-4 lg:px-0"
       />
     </React.Fragment>
   );
