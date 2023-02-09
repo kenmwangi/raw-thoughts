@@ -4,6 +4,7 @@ import Head from "next/head";
 
 // components
 import Header from "@/components/Header";
+import IntroSection from "@/components/IntroSection";
 const HomePage = () => {
   return (
     <main className="max-w-6xl mx-auto">
@@ -11,20 +12,14 @@ const HomePage = () => {
         <title>RW - Collection of my raw thoughts</title>
       </Head>
 
-      <section className="container">
-        <p>
-          These are my ocassional thought processes based on day to day
-          experiences. I will be writing on different topics from my software
-          development journey, social issues and philosophy.
+      <IntroSection title="An archive of my raw thoughts 💭️">
+        <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
+          My ocassional thought processes. <br /> <br />I will be writing on
+          different topics from my software development journey, social issues
+          and philosophy 📑️. But since it will be on internet - public - 🫣️
+          everyone is free to read it.
         </p>
-        <p>
-          I intend to make this personal space an archive of my raw thoughts.
-        </p>
-        <p>
-          But since it will be on internet - public - 🫣️ everyone is free to
-          read it.
-        </p>
-      </section>
+      </IntroSection>
     </main>
   );
 };

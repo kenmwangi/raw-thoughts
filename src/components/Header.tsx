@@ -7,7 +7,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 // Nav Items
 const navItems = [
   { id: "1", href: "/about", title: "About" },
-  { id: "2", href: "/thoughts", title: "Thoughts" },
+  { id: "2", href: "/blog", title: "Blogs" },
 ];
 
 const Header = () => {
