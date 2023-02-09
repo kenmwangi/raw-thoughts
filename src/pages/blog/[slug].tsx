@@ -37,7 +37,7 @@ const SingleBlogPage = ({ blog }: BlogProps) => {
       <Head>
         <title>{blog.title}</title>
       </Head>
-      <article className="prose max-w-3xl mx-auto py-8">
+      <article className="prose max-w-3xl mx-auto p-8">
         <div className="text-center mb-8">
           <h1>
             <Balancer>{blog.title}</Balancer>
