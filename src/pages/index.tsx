@@ -11,7 +11,6 @@ const HomePage = () => {
         <title>RW - Collection of my raw thoughts</title>
       </Head>
 
-      <Header />
       <section className="container">
         <p>
           These are my ocassional thought processes based on day to day
