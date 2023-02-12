@@ -37,7 +37,7 @@ const HomePage = ({ thoughts }: { thoughts: Thought[] }) => {
         </article>
       </IntroSection>
 
-      <section className="max-w-6xl mx-auto py-2 px-8">
+      <section className="max-w-6xl mx-auto py-2 px-8 lg:px-0">
         <h3 className="max-w-2xl mt-3 text-3xl mb-10 font-bold leading-relaxed tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
           Featured Thoughts
         </h3>
@@ -69,7 +69,7 @@ function ThoughtCard(thought: Thought) {
         {format(parseISO(thought.date), "LLLL d, yyyy")}
       </time>
 
-      <p>
+      <p className="leading-normal text-gray-500 lg:text-lg">
         <strong className="mr-2">Summary:</strong>
         {thought.summary}
       </p>

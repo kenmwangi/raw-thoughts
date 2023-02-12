@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="relative">
       <Container className="">
-        <div className="my-10 text-sm text-center text-gray-600">
+        <div className="my-10 text-xs lg:text-sm text-gray-600">
           Copyright &copy; Raw Thoughts, {new Date().getFullYear()}. Made with
           ❤️ by{" "}
           <Link
