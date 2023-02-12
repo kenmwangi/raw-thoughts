@@ -1,38 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Raw Thoughts
 
-## Getting Started
+My goal is to have a personal space I can archive my raw thoughts.
 
-First, run the development server:
+What I think is random and I will have more thoughts next minute, hour or day - but it will be best if I keep them thoughts which are overflowing somewhere as a way of letting out what I'm feeling at a given time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## How I worked on this project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. I wanted to have a simple UI design.
+2. The tech stack of **Nextjs** (UI), **Tailwindcss** (styling) **Contentlayer** (content generation) seemed as the perfect combination.
+3. There is integration of Feature Branches and Continuos Integration since I want to make this _"blog"_ open-source in the future.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Why I built this minimalist blog this way
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+1. The plan is to make this project proper full-stack, where I will add authentication, some backend codebases and testing.
+2. I was torn between Contentlayer (Beta) and Markdown since they can be integrated in the Nextjs. The motivation for using Contentlayer despite is being in beta stage was how laborious and difficult it is to use.
+3. I'm in full-stack development journey, I need to have useful projects in my portfolio 🫣️.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Future contributions I look forward to
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Refactor the code.
+2. Add end-to-end tests with Cypress.
+3. Have a proper documentation on this project (seriously) 🙎‍♂️️.
