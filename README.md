@@ -1,4 +1,5 @@
 # Raw Thoughts
+[![Raw Thoughts CI](https://github.com/kenmwangi/raw-thoughts/actions/workflows/main.yml/badge.svg)](https://github.com/kenmwangi/raw-thoughts/actions/workflows/main.yml)
 
 My goal is to have a personal space I can archive my raw thoughts.
 
