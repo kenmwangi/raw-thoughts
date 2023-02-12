@@ -7,13 +7,13 @@ import ThemeSwitcher from "./ThemeSwitcher";
 // Nav Items
 const navItems = [
   { id: "1", href: "/about", title: "About" },
-  { id: "2", href: "/blog", title: "Blogs" },
+  { id: "2", href: "/thoughts", title: "Thoughts" },
 ];
 
 const Header = () => {
   return (
-    <div className="w-full">
-      <nav className="container max-w-6xl relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
+    <div className="w-full py-6">
+      <nav className="container max-w-6xl relative flex flex-wrap items-center justify-between px-8 lg:px-0 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (

@@ -20,26 +20,12 @@ const HomePage = ({ thoughts }: { thoughts: Thought[] }) => {
   return (
     <main className="">
       <Head>
-        <title>RW - Collection of my raw thoughts</title>
+        <title>Raw Thoughts - Collection of my raw thoughts</title>
       </Head>
-
-      <IntroSection title="An archive of my raw thoughts 💭️">
-        <article className="max-w-2xl text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
-          <p>My ocassional thought processes.</p>
-          <p>
-            I will be writing on different topics from my software development
-            journey, social issues and philosophy 📑️.
-          </p>
-          <p>
-            But since it will be on internet - <Mark>public</Mark>- 🫣️ everyone
-            is free to read it.
-          </p>
-        </article>
-      </IntroSection>
 
       <section className="max-w-6xl mx-auto py-2 px-8">
         <h3 className="max-w-2xl mt-3 text-3xl mb-10 font-bold leading-relaxed tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
-          Featured Thoughts
+          Thoughts
         </h3>
         {thoughts.map((thought, idx) => (
           <ThoughtCard key={idx} {...thought} />
