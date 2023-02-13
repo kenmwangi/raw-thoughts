@@ -2,6 +2,7 @@ import React from "react";
 import Container from "@/components/Container";
 import Image from "next/image";
 import Profile from "/public/images/profile.jpg";
+import SocialContact from "@/components/SocialContact";
 
 const index = () => {
   return (
@@ -21,6 +22,8 @@ const index = () => {
         Full stack software developer, open-source contributor & technical
         writer
       </p>
+
+      <SocialContact />
     </Container>
   );
 };
