@@ -9,7 +9,7 @@ import IntroSection from "@/components/IntroSection";
 import Container from "@/components/Container";
 import Mark from "@/utils/Mark";
 
-const MAX_DISPLAY = 3;
+const MAX_DISPLAY = 2;
 
 export async function getStaticProps() {
   const thoughts: Thought[] = allThoughts.sort((a, b) => {
