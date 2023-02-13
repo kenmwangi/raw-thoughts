@@ -5,6 +5,11 @@ import {
 } from "contentlayer/source-files";
 import readingTime from "reading-time";
 
+import remarkGfm from "remark-gfm";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+
 export const Thought = defineDocumentType(() => ({
   name: "Thought",
   filePathPattern: `**/*.mdx`,
@@ -54,4 +59,38 @@ const computedFields: ComputedFields = {
 export default makeSource({
   contentDirPath: "thoughts",
   documentTypes: [Thought],
+
+  mdx: {
+    remarkPlugins: [remarkGfm],
+    rehypePlugins: [
+      rehypeSlug,
+      // [
+      //   rehypePrettyCode,
+      //   {
+      //     theme: "one-dark-pro",
+      //     onVisitLine(node) {
+      //       // Prevent lines from collapsing in `display: grid` mode, and allow empty
+      //       // lines to be copy/pasted
+      //       if (node.children.length === 0) {
+      //         node.children = [{ type: "text", value: " " }];
+      //       }
+      //     },
+      //     onVisitHighlightedLine(node) {
+      //       node.properties.className.push("line--highlighted");
+      //     },
+      //     onVisitHighlightedWord(node) {
+      //       node.properties.className = ["word--highlighted"];
+      //     },
+      //   },
+      // ],
+      [
+        rehypeAutolinkHeadings,
+        {
+          properties: {
+            className: ["anchor"],
+          },
+        },
+      ],
+    ],
+  },
 });
