@@ -5,9 +5,10 @@ import { compareDesc, format, parseISO } from "date-fns";
 import { allThoughts, Thought } from "contentlayer/generated";
 
 // components
-
 import IntroSection from "@/components/IntroSection";
 import Mark from "@/utils/Mark";
+
+const MAX_DISPLAY = 2;
 
 export async function getStaticProps() {
   const thoughts: Thought[] = allThoughts.sort((a, b) => {
@@ -41,9 +42,26 @@ const HomePage = ({ thoughts }: { thoughts: Thought[] }) => {
         <h3 className="max-w-2xl mt-3 text-3xl mb-10 font-bold leading-relaxed tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
           Featured Thoughts
         </h3>
-        {thoughts.map((thought, idx) => (
+        {!thoughts.length && (
+          <p className="text-indigo-700">
+            ⚠️ Oops, No thoughts Found. I am dry
+          </p>
+        )}
+        {thoughts.slice(0, MAX_DISPLAY).map((thought, idx) => (
           <ThoughtCard key={idx} {...thought} />
         ))}
+
+        {thoughts.length > MAX_DISPLAY && (
+          <section className="flex my-10 justify-start text-base font-medium leading-6">
+            <Link
+              href="/thoughts"
+              aria-label="all thoughts"
+              className="text-indigo-500 hover:text-indigo-700 hover:underline-offset-8 hover:underline"
+            >
+              All Thoughts &rarr;
+            </Link>
+          </section>
+        )}
       </section>
     </main>
   );
