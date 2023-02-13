@@ -8,15 +8,35 @@ import { allThoughts, Thought } from "contentlayer/generated";
 
 import IntroSection from "@/components/IntroSection";
 import Mark from "@/utils/Mark";
+import Pagination from "@/components/Pagination";
+
+interface thoughtsProps {
+  thoughts: Thought[];
+  initialDisplayThoughts: number;
+  pagination: number;
+}
+
+export const THOUGHTS_PER_PAGE = 1;
 
 export async function getStaticProps() {
   const thoughts: Thought[] = allThoughts.sort((a, b) => {
     return compareDesc(new Date(a.date), new Date(b.date));
   });
-  return { props: { thoughts } };
+  // MAXIMUM THOUGHTS DISPLAY PER PAGE
+  const initialDisplayThoughts = thoughts.slice(0, THOUGHTS_PER_PAGE);
+  const pagination = {
+    currentPage: 1,
+    totalPages: Math.ceil(thoughts.length / THOUGHTS_PER_PAGE),
+  };
+
+  return { props: { thoughts, initialDisplayThoughts, pagination } };
 }
 
-const HomePage = ({ thoughts }: { thoughts: Thought[] }) => {
+const HomePage = ({
+  thoughts,
+  initialDisplayThoughts,
+  pagination,
+}: thoughtsProps) => {
   return (
     <main className="">
       <Head>
@@ -31,6 +51,7 @@ const HomePage = ({ thoughts }: { thoughts: Thought[] }) => {
           <ThoughtCard key={idx} {...thought} />
         ))}
       </section>
+      <div>{/* <Pagination pagination={pagination} /> */}</div>
     </main>
   );
 };
