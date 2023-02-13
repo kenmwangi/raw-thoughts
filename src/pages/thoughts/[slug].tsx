@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { format, parseISO } from "date-fns";
 import fs from "fs";
 import type { Thought } from "contentlayer/generated";
-import generateRss from "../../../lib/generate-rss";
+
 import Head from "next/head";
 import React from "react";
 import Balancer from "react-wrap-balancer";
@@ -29,10 +29,6 @@ export async function getStaticProps({ params }: { params: { slug: string } }) {
     notFound();
   }
 
-  if (allThoughts.length > 0) {
-    const rss = generateRss(allThoughts);
-    fs.writeFileSync("./public/feed.xml", rss);
-  }
   return {
     props: {
       thought,
