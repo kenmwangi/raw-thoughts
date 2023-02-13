@@ -13,7 +13,7 @@ const navItems = [
 const Header = () => {
   return (
     <div className="w-full py-6">
-      <nav className="container max-w-6xl relative flex flex-wrap items-center justify-between px-8 lg:px-0 mx-auto lg:justify-between xl:px-0">
+      <nav className="container max-w-6xl relative flex flex-wrap items-center justify-between px-8 xl:px-0 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
           {({ open }) => (

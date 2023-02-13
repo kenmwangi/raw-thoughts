@@ -9,7 +9,7 @@ import IntroSection from "@/components/IntroSection";
 import Container from "@/components/Container";
 import Mark from "@/utils/Mark";
 
-const MAX_DISPLAY = 2;
+const MAX_DISPLAY = 3;
 
 export async function getStaticProps() {
   const thoughts: Thought[] = allThoughts.sort((a, b) => {
@@ -39,7 +39,7 @@ const HomePage = ({ thoughts }: { thoughts: Thought[] }) => {
         </article>
       </IntroSection>
 
-      <Container className="max-w-6xl mx-auto py-2 px-8 lg:px-0">
+      <Container className="max-w-6xl mx-auto py-2 px-8 xl:px-0">
         <h3 className="max-w-2xl mt-3 text-3xl mb-10 font-bold leading-relaxed tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
           Featured Thoughts
         </h3>
