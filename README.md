@@ -1,5 +1,7 @@
 # Raw Thoughts
 
+[![Raw Thoughts CI](https://github.com/kenmwangi/raw-thoughts/actions/workflows/main.yml/badge.svg)](https://github.com/kenmwangi/raw-thoughts/actions/workflows/main.yml)
+
 My goal is to have a personal space I can archive my raw thoughts.
 
 What I think is random and I will have more thoughts next minute, hour or day - but it will be best if I keep them thoughts which are overflowing somewhere as a way of letting out what I'm feeling at a given time.
