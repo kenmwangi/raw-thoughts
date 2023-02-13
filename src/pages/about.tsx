@@ -14,11 +14,11 @@ const index = () => {
         placeholder="blur"
         priority
       />
-      <h3 className="max-w-2xl mt-3 text-3xl font-bold leading-relaxed tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
+      <h3 className="max-w-2xl mt-3 text-xl font-bold leading-relaxed tracking-tight text-gray-800 lg:leading-tight lg:text-4xl">
         Ken Mwangi
       </h3>
-      <p className="max-w-2xl py-4 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl">
-        Full stack software developer, open-source contributor and technical
+      <p className="max-w-2xl py-4 text-xs leading-normal text-gray-500 lg:text-lg xl:text-xl">
+        Full stack software developer, open-source contributor & technical
         writer
       </p>
     </Container>
