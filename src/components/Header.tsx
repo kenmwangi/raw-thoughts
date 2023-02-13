@@ -2,7 +2,7 @@ import { Link } from "../utils/NextLink";
 import React from "react";
 import { Disclosure } from "@headlessui/react";
 
-import ThemeSwitcher from "./ThemeSwitcher";
+// import ThemeSwitcher from "./ThemeSwitcher";
 
 // Nav Items
 const navItems = [

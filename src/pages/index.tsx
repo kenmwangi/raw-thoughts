@@ -92,10 +92,6 @@ function ThoughtCard(thought: Thought) {
         <strong className="mr-2">Summary:</strong>
         {thought.summary}
       </p>
-      {/* <article
-        className="text-sm tracking-wide leading-normal"
-        dangerouslySetInnerHTML={{ __html: thought.body.html }}
-      /> */}
     </section>
   );
 }
