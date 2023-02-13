@@ -1,11 +1,13 @@
 import { allThoughts } from "contentlayer/generated";
 import { notFound } from "next/navigation";
 import { format, parseISO } from "date-fns";
-import fs from "fs";
+
 import type { Thought } from "contentlayer/generated";
 
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
+import Container from "../../components/Container";
 import Balancer from "react-wrap-balancer";
 
 type ThoughtProps = {
@@ -56,6 +58,15 @@ const SingleBlogPage = ({ thought }: ThoughtProps) => {
         dangerouslySetInnerHTML={{ __html: thought.body.html }}
         className="max-w-prose mx-auto lg:text-lg px-4 lg:px-0"
       />
+      <Container className="flex my-10 justify-end text-base font-medium leading-6">
+        <Link
+          href="/thoughts"
+          aria-label="all thoughts"
+          className="text-indigo-500 hover:text-indigo-700 hover:underline-offset-8 hover:underline"
+        >
+          &larr; Back to All Thoughts
+        </Link>
+      </Container>
     </React.Fragment>
   );
 };
