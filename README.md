@@ -15,7 +15,7 @@ What I think is random and I will have more thoughts next minute, hour or day - 
 ## Why I built this minimalist blog this way
 
 1. The plan is to make this project proper full-stack, where I will add authentication, some backend codebases and testing.
-2. I was torn between Contentlayer (Beta) and Markdown since they can be integrated in the Nextjs. The motivation for using Contentlayer despite is being in beta stage was how laborious and difficult it is to use.
+2. I was torn between Contentlayer (Beta) and Markdown since they can be integrated in the Nextjs. The motivation for using Contentlayer despite is being in beta stage was how Markdown laborious and difficult it is to use.
 3. I'm in full-stack development journey, I need to have useful projects in my portfolio 🫣️.
 
 ## Future contributions I look forward to
